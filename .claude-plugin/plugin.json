@@ -1,0 +1,17 @@
+{
+  "name": "pip",
+  "version": "0.17.0",
+  "description": "PIP — the learning layer for AI-assisted development. Reads your real repo, builds a concept tree from the code you actually shipped, teaches + grades each concept so you can defend every line in an interview, and renders a dashboard of everything you've learned — sliced by project or by tech stack. Never writes your production code.",
+  "author": {
+    "name": "Hamzah Assaf"
+  },
+  "keywords": [
+    "learning",
+    "ai-assisted-development",
+    "concepts",
+    "interview-prep",
+    "teaching",
+    "code-comprehension",
+    "dashboard"
+  ]
+}

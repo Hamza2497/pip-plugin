@@ -1,0 +1,31 @@
+{
+  "generatedAt": "2026-01-01",
+  "user": "Example User",
+  "stacks": [
+    { "id": "web", "name": "Web · Example", "blurb": "HTTP API · auth · data · deploy" }
+  ],
+  "projects": [
+    {
+      "id": "demo-api",
+      "name": "Demo API",
+      "stacks": ["web"],
+      "concepts": ["http-basics", "routing", "validation", "auth", "db", "migrations", "testing", "deploy"],
+      "parts": [
+        { "name": "Basics", "concepts": ["http-basics", "routing"] },
+        { "name": "API", "concepts": ["validation", "auth"] },
+        { "name": "Data", "concepts": ["db", "migrations"] },
+        { "name": "Ship", "concepts": ["testing", "deploy"] }
+      ]
+    }
+  ],
+  "concepts": [
+    { "id": "http-basics", "name": "HTTP request/response", "stacks": ["web"], "prereqs": [], "learnedIn": [ { "project": "demo-api", "score": 9, "code": "app/server.py:12", "date": "2026-01-02" } ] },
+    { "id": "routing", "name": "Routing & handlers", "stacks": ["web"], "prereqs": ["http-basics"], "learnedIn": [ { "project": "demo-api", "score": 9, "code": "app/routes.py:20", "date": "2026-01-03" } ] },
+    { "id": "validation", "name": "Request validation", "stacks": ["web"], "prereqs": ["routing"], "learnedIn": [ { "project": "demo-api", "score": 7, "code": "app/schemas.py:8", "date": "2026-01-04" } ] },
+    { "id": "auth", "name": "Token authentication", "stacks": ["web"], "prereqs": ["routing"], "learnedIn": [ { "project": "demo-api", "score": 6, "code": "app/auth.py:15", "date": "2026-01-05" } ] },
+    { "id": "db", "name": "Database access", "stacks": ["web"], "prereqs": ["routing"], "learnedIn": [] },
+    { "id": "migrations", "name": "Schema migrations", "stacks": ["web"], "prereqs": ["db"], "learnedIn": [] },
+    { "id": "testing", "name": "Automated tests", "stacks": ["web"], "prereqs": ["routing"], "learnedIn": [] },
+    { "id": "deploy", "name": "Deployment", "stacks": ["web"], "prereqs": ["validation", "auth", "db"], "learnedIn": [] }
+  ]
+}
