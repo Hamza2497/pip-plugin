@@ -6,6 +6,10 @@ PIP is a Claude plugin that rides along while you build. It reads your **real re
 
 PIP never writes your production code; it helps you learn the ideas so every line on your CV is one you can defend.
 
+Use the dashboard to track your learning progress visually — mastery, concepts, and project status all appear there.
+
+PIP can also import your past projects so it does not re-teach concepts you already know.
+
 ---
 
 ## Installation
@@ -37,7 +41,11 @@ cd pip-plugin/pip
 - Type `/` and look for `pip-` commands, or ask the chat to run them.
 - No environment variables, no API keys, no external server needed.
 
-### 4. First use creates state files
+### 4. Import previous projects
+
+If you have existing repos or folders you’ve already built, use `/pip-import` to bring that learning history in. This prevents PIP from teaching you the same concept again and keeps your progress aligned across projects.
+
+### 5. First use creates state files
 
 PIP stores progress in two plain-text locations:
 - `.pip/progress.md` in your repo root
